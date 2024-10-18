@@ -1,0 +1,210 @@
+:root {
+  --Pink: #ff879f;
+  --White: #fff;
+  --Black: #08010c;
+  --Yellow-light: #ffde91;
+  --Orange: #fdaa1d;
+  --Purple-light: #a876f5;
+  --Blue: #016aff;
+  --Pink-light: #ffc4c6;
+  --Blue-light: #62bafd;
+  --Fucsia: #fc0fc0;
+  --Gray: #d9d9d9;
+  --Red: #ff2d20;
+  --Gray-2: #cfcece;
+  --Purple-dark: #1c0b25;
+  --Purple: #2c1338;
+  --Cream: #efe3de;
+}
+
+.headline-1 {
+  font-size: 9.6rem;
+  font-style: normal;
+  line-height: normal;
+}
+.headline-2 {
+  font-size: 4rem;
+  font-style: normal;
+  line-height: normal;
+}
+.headline-3 {
+  font-size: 6.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+.headline-4 {
+  font-size: 4rem;
+  font-style: normal;
+  line-height: normal;
+}
+.headline-5 {
+  font-size: 4.8rem;
+  font-style: normal;
+  line-height: normal;
+}
+.headline-6 {
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: normal;
+}
+.headline-7 {
+  font-size: 9.6rem;
+  font-style: normal;
+  line-height: 90.588%;
+}
+
+.body-1 {
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.body-2 {
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.body-3 {
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+}
+.body-4 {
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: normal;
+}
+.button-text-1 {
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.button-text-2 {
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.menu-text {
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.number {
+  font-size: 6.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.card-title-1 {
+  font-size: 4.8rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.review-text {
+  font-size: 4.8rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.name-review {
+  font-size: 4rem;
+  font-style: normal;
+  line-height: normal;
+}
+.name-footer {
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+}
+.checked-text {
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+@media screen and (max-width: 640px) {
+  .headline-1 {
+    font-size: 6.4rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .headline-2 {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .headline-3 {
+    font-size: 4.8rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .headline-4 {
+    font-size: 3.6rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .headline-5 {
+    font-size: 3.6rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .headline-6 {
+    font-size: 2.4rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .headline-7 {
+    font-size: 6.4rem;
+    font-style: normal;
+    line-height: 90.588%;
+  }
+  .body-1 {
+    font-size: 2rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .body-2 {
+    font-size: 2.4rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .body-3 {
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .menu-text {
+    font-size: 6.4rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .card-title-1 {
+    font-size: 4.8rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .review-text {
+    font-size: 2rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  .name-review {
+    font-size: 2.4rem;
+    font-style: normal;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-text {
+    font-size: 4.8rem;
+    font-style: normal;
+    line-height: normal;
+  }
+}

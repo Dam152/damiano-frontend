@@ -1,0 +1,18 @@
+export const colorMap = {
+  White: "var(--White)",
+  Pink: "var(--Pink)",
+  Black: "var(--Black)",
+  YellowLight: "var(--Yellow-light)",
+  Orange: "var(--Orange)",
+  PurpleLight: "var(--Purple-light)",
+  Blue: "var(--Blue)",
+  PinkLight: "var(--Pink-light)",
+  BlueLight: "var(--Blue-light)",
+  Fucsia: "var(--Fucsia)",
+  Gray: "var(--Gray)",
+  Red: "var(--Red)",
+  Gray2: "var(--Gray-2)",
+  PurpleDark: "var(--Purple-dark)",
+  Purple: "var(--Purple)",
+  Cream: "var(--Cream)",
+};
