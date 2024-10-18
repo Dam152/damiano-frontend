@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,4 +55,9 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.section--container {
+  max-width: min(1310px, 100%);
+  margin-inline: auto;
 }

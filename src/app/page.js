@@ -1,3 +1,15 @@
+import Section from "./_components/atoms/Section";
+import Header from "./_components/organisms/Header";
+import Hero from "./_components/templates/Hero";
+
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Header></Header>
+      <Hero></Hero>
+      <Section>
+        <div className="h-[1024px]"></div>
+      </Section>
+    </>
+  );
 }
