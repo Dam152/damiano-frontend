@@ -22,3 +22,31 @@
 .animation-menu-hover:hover::before {
   transform: translateX(100%);
 }
+
+.navbar-responsive.open {
+  background-color: var(--Purple-dark);
+  animation: openMenu 1s ease-in-out forwards;
+}
+
+.navbar-responsive.close {
+  background-color: var(--Purple-dark);
+  animation: closeMenu 1s ease-in-out forwards;
+}
+
+@keyframes openMenu {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes closeMenu {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
