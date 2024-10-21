@@ -12,6 +12,7 @@ import { configBalls } from "@/app/assets/js/balls";
 export default function Hero() {
   const [showNavbar, setShowNavbar] = useState(false);
   const { open, setIsOpen } = useMenuContext();
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollThreshold = window.innerHeight / 16;
@@ -30,21 +31,21 @@ export default function Hero() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   if (open) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto";
-  //   }
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //   };
-  // }, [open]);
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [open]);
 
   return (
     <section className="w-screen h-screen bg-[var(--Purple)] px-[32px] max-md:pb-[32px] max-sm:pb-[24px] max-[900px]:h-auto max-md:px-[24px] max-sm:px-[16px] overflow-x-hidden">
-      <div className="w-full h-full flex flex-col items-center justify-center relative ">
+      <div className="w-full h-full flex flex-col items-center justify-center relative">
         {configBalls.map((ball, index) => (
           <Ball
             key={index}
@@ -54,7 +55,7 @@ export default function Hero() {
             bg={ball.bg}
           />
         ))}
-        <div className="section--container flex flex-col items-center gap-[24px] max-[900px]:pb-[56px] max-[900px]:pt-[64px] max-sm:pt-[114px] max-sm:pb-[96px] z-10 ">
+        <div className="section--container flex flex-col items-center gap-[24px] max-[900px]:pb-[56px] max-[900px]:pt-[64px] max-sm:pt-[114px] max-sm:pb-[96px] z-10">
           <Text size={"headline-1"} weight={"700"} className={"text-center"}>
             We Design Beautiful Products Faster.
           </Text>
