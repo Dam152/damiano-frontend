@@ -46,3 +46,24 @@ export const configBalls = [
     bg: "YellowLight",
   },
 ];
+
+export const configBallsAbout = [
+  {
+    bg: "BlueLight",
+    className:
+      "absolute left-[-48px] top-[48px] max-sm:left-[-96px] max-sm:top-[24px]",
+  },
+  {
+    width: "32px",
+    height: "32px",
+    bg: "Fucsia",
+    className: "absolute top-[135px] left-[145px] max-sm:hidden",
+  },
+  {
+    width: "32px",
+    height: "32px",
+    bg: "YellowLight",
+    className:
+      "absolute top-[135px] right-[145px] max-md:right-[-16px] max-sm:top-[48px]",
+  },
+];

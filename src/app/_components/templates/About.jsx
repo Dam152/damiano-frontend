@@ -1,32 +1,21 @@
 import React from "react";
 import Section from "../atoms/Section";
-import { Yaldevi } from "@next/font/google";
 import Text from "../atoms/Text";
 import Ball from "../atoms/Ball";
+import { configBallsAbout } from "@/app/assets/js/balls";
 
 export default function About() {
   return (
-    <Section id="about">
-      <Ball
-        bg={"BlueLight"}
-        className={
-          "absolute left-[-48px] top-[48px] max-sm:left-[-96px] max-sm:top-[24px]"
-        }
-      ></Ball>
-      <Ball
-        width="32px"
-        height="32px"
-        bg={"Fucsia"}
-        className={"absolute top-[135px] left-[145px] max-sm:hidden"}
-      ></Ball>
-      <Ball
-        bg={"YellowLight"}
-        width="32"
-        height="32"
-        className={
-          "absolute top-[135px] right-[145px] max-md:right-[-16px] max-sm:top-[48px]"
-        }
-      ></Ball>
+    <Section id="about" className="overflow-x-hidden">
+      {configBallsAbout.map((ball, index) => (
+        <Ball
+          key={index}
+          width={ball.width}
+          height={ball.height}
+          className={ball.className}
+          bg={ball.bg}
+        />
+      ))}
       <div className="w-full flex flex-col gap-[48px] items-center section--container max-sm:gap-[24px]">
         <Text
           tag="h2"
