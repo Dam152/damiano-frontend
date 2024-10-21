@@ -6,19 +6,19 @@ export default function Navbar({ className }) {
   const menu = [
     {
       name: "About Me",
-      path: "#",
+      path: "#about",
     },
     {
       name: "Why Design Craft",
-      path: "#",
+      path: "#wdc",
     },
     {
       name: "Services",
-      path: "#",
+      path: "#services",
     },
     {
       name: "Contact",
-      path: "#",
+      path: "#contct",
     },
   ];
 

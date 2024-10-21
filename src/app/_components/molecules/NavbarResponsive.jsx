@@ -8,10 +8,10 @@ export default function NavbarResponsive() {
   const [isClosing, setIsClosing] = useState(false);
 
   const menu = [
-    { name: "About Me", path: "#" },
-    { name: "Why Design Craft", path: "#" },
-    { name: "Services", path: "#" },
-    { name: "Contact", path: "#" },
+    { name: "About Me", path: "#about" },
+    { name: "Why Design Craft", path: "#wdc" },
+    { name: "Services", path: "#services" },
+    { name: "Contact", path: "#contact" },
   ];
 
   const handleClose = () => {
