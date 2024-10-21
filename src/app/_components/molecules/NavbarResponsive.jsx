@@ -24,7 +24,7 @@ export default function NavbarResponsive() {
 
   return (
     <div
-      className={`w-screen h-screen fixed top-0 navbar-responsive p-[24px] flex flex-col items-center overflow-scroll justify-center z-50 ${
+      className={`w-screen h-screen fixed top-0 navbar-responsive p-[24px] flex flex-col items-center overflow-y-auto justify-center z-50 ${
         isClosing ? "close" : "open"
       }`}
     >
