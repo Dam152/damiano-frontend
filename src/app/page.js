@@ -7,9 +7,7 @@ export default function Home() {
     <>
       <Header></Header>
       <Hero></Hero>
-      <Section>
-        <div className="h-[1024px]"></div>
-      </Section>
+      <Section></Section>
     </>
   );
 }

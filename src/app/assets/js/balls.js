@@ -15,7 +15,7 @@ export const configBalls = [
     width: "24",
     height: "24",
     className:
-      "absolute top-[375px] left-[409px] max-lg:top-[320px] max-lg:left-[142px]  max-md:left-[148px] max-md:top-[273px] max-sm:top-[231px] max-sm:left-auto max-sm:right-[-28px]",
+      "absolute top-[344px] left-[322px] max-lg:top-[320px] max-lg:left-[142px]  max-md:left-[148px] max-md:top-[273px] max-sm:top-[231px] max-sm:left-auto max-sm:right-[-28px]",
     bg: "Pink",
   },
   {
