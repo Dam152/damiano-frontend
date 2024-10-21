@@ -46,6 +46,9 @@ export default function NavbarResponsive() {
       </nav>
       <div
         className="bg-[var(--Black)] p-[24px] rounded-[48px] cursor-pointer absolute bottom-[24px] right-[24px] max-sm:right-[16px]"
+        style={{
+          bottom: "calc(24px + env(safe-area-inset-bottom))",
+        }}
         onClick={handleClose}
       >
         <Icons
