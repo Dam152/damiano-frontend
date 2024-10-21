@@ -27,9 +27,8 @@ export default function NavbarResponsive() {
       className={`w-screen h-screen fixed top-0 navbar-responsive p-[24px] flex flex-col items-center justify-center z-50 ${
         isClosing ? "close" : "open"
       }`}
-      style={{ overflowY: "auto" }}
     >
-      <nav className="w-fit flex flex-col items-center gap-[48px]">
+      <nav className="w-fit flex flex-col items-center gap-[48px] overflow-scroll">
         {menu.map((item) => (
           <Text
             tag="link"
@@ -46,9 +45,6 @@ export default function NavbarResponsive() {
       </nav>
       <div
         className="bg-[var(--Black)] p-[24px] rounded-[48px] cursor-pointer absolute bottom-[24px] right-[24px] max-sm:right-[16px]"
-        style={{
-          bottom: "calc(24px + env(safe-area-inset-bottom))",
-        }}
         onClick={handleClose}
       >
         <Icons
