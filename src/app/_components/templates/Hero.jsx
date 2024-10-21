@@ -30,17 +30,17 @@ export default function Hero() {
     };
   }, []);
 
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+  // useEffect(() => {
+  //   if (open) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "auto";
+  //   }
 
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [open]);
+  //   return () => {
+  //     document.body.style.overflow = "auto";
+  //   };
+  // }, [open]);
 
   return (
     <section className="w-screen h-screen bg-[var(--Purple)] px-[32px] max-md:pb-[32px] max-sm:pb-[24px] max-[900px]:h-auto max-md:px-[24px] max-sm:px-[16px] overflow-x-hidden">
