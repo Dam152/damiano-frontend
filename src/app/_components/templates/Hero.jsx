@@ -6,6 +6,8 @@ import Navbar from "../molecules/Navbar";
 import Icons from "../atoms/Icons";
 import NavbarResponsive from "../molecules/NavbarResponsive";
 import { useMenuContext } from "@/app/assets/js/contextMenu";
+import Ball from "../atoms/Ball";
+import { configBalls } from "@/app/assets/js/balls";
 
 export default function Hero() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -41,8 +43,17 @@ export default function Hero() {
   }, [open]);
 
   return (
-    <section className="w-screen h-screen bg-[var(--Purple)] px-[32px] max-md:pb-[32px] max-sm:pb-[24px] max-[900px]:h-auto max-md:px-[24px] max-sm:px-[16px] ">
-      <div className="w-full h-full flex flex-col items-center justify-center relative">
+    <section className="w-screen h-screen bg-[var(--Purple)] px-[32px] max-md:pb-[32px] max-sm:pb-[24px] max-[900px]:h-auto max-md:px-[24px] max-sm:px-[16px] overflow-x-hidden">
+      <div className="w-full h-full flex flex-col items-center justify-center relative ">
+        {configBalls.map((ball, index) => (
+          <Ball
+            key={index}
+            width={ball.width}
+            height={ball.height}
+            className={ball.className}
+            bg={ball.bg}
+          />
+        ))}
         <div className="section--container flex flex-col items-center gap-[24px] max-[900px]:pb-[56px] max-[900px]:pt-[64px] max-sm:pt-[114px] max-sm:pb-[96px] z-10 ">
           <Text size={"headline-1"} weight={"700"} className={"text-center"}>
             We Design Beautiful Products Faster.
