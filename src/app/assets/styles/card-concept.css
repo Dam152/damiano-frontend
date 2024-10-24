@@ -1,0 +1,14 @@
+.flex-calc {
+  flex: 1 0 calc(33.33% - 16px);
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-calc {
+    flex: 1 0 calc(50% - 16px);
+  }
+}
+@media screen and (max-width: 640px) {
+  .flex-calc {
+    flex: 1 0 100%;
+  }
+}
