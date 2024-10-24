@@ -67,3 +67,25 @@ export const configBallsAbout = [
       "absolute top-[135px] right-[145px] max-md:right-[-16px] max-sm:top-[48px]",
   },
 ];
+
+export const configBallsConcept = [
+  {
+    width: "48",
+    height: "48",
+    className: "absolute top-[110px] max-sm:right-0 max-sm:top-0",
+    bg: "BlueLight",
+  },
+  {
+    width: "232",
+    height: "232",
+    className: "absolute left-[-32px] top-[256px]",
+    bg: "Fucsia",
+  },
+  {
+    width: "232",
+    height: "232",
+    className:
+      "absolute right-[-32px] top-[256px] max-md:top-0 max-md:right-[-176px] max-sm:top-[200px]",
+    bg: "YellowLight",
+  },
+];
